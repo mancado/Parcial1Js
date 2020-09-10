@@ -2,11 +2,31 @@
 //Cargar api
 
 
+var ulr1;
+var ulr2
+var ulr3
+var ulr4
+var ulr5
+var ulr6
+var ulr7
+var ulr8
+
+
 fetch('https://dwaapi.juvasquez88.vercel.app/letters')
     .then(res =>res.json() )
     .then(lenguajeseñas=> {
 
-        console.log(lenguajeseñas)
+        console.log(lenguajeseñas);
+
+        ulr1=`${lenguajeseñas.letters[0].image}`;
+        ulr2=`${lenguajeseñas.letters[1].image}`;
+        ulr3=`${lenguajeseñas.letters[2].image}`;
+        ulr4=`${lenguajeseñas.letters[3].image}`;
+        ulr5=`${lenguajeseñas.letters[4].image}`;
+        ulr6=`${lenguajeseñas.letters[5].image}`;
+        ulr7=`${lenguajeseñas.letters[6].image}`;
+        ulr8=`${lenguajeseñas.letters[7].image}`;
+        
      
 
     })
@@ -17,48 +37,46 @@ fetch('https://dwaapi.juvasquez88.vercel.app/letters')
 
  //funciones para imprimir la imagen con su respectivo boton   
     function imprimirimagenE(){
-        var url="https://cdn.statically.io/gh/julianvasquez/letters/28c1fbb7/e.png";
-        document.getElementsByTagName("img")[0].setAttribute("src",url)
+        document.getElementsByTagName("img")[0].setAttribute("src",ulr1)
 
     }
 
 
     function imprimirimagenI(){
-        var url="https://cdn.statically.io/gh/julianvasquez/letters/28c1fbb7/i.png";
-        document.getElementsByTagName("img")[0].setAttribute("src",url)
+        document.getElementsByTagName("img")[0].setAttribute("src",ulr2)
 
     }
 
     function imprimirimagenL(){
-        var url="https://cdn.statically.io/gh/julianvasquez/letters/28c1fbb7/l.png";
-        document.getElementsByTagName("img")[0].setAttribute("src",url)
+       
+        document.getElementsByTagName("img")[0].setAttribute("src",ulr3)
 
     }
     function imprimirimagenO(){
-        var url="https://cdn.statically.io/gh/julianvasquez/letters/28c1fbb7/o.png";
-        document.getElementsByTagName("img")[0].setAttribute("src",url)
+        
+        document.getElementsByTagName("img")[0].setAttribute("src",ulr4)
 
     }
 
     function imprimirimagenR(){
-        var url="https://cdn.statically.io/gh/julianvasquez/letters/28c1fbb7/r.png";
-        document.getElementsByTagName("img")[0].setAttribute("src",url)
+        
+        document.getElementsByTagName("img")[0].setAttribute("src",ulr5)
 
     }
 
     function imprimirimagenT(){
-        var url="https://cdn.statically.io/gh/julianvasquez/letters/28c1fbb7/t.png";
-        document.getElementsByTagName("img")[0].setAttribute("src",url)
+        
+        document.getElementsByTagName("img")[0].setAttribute("src",ulr6)
 
     }
     function imprimirimagenV(){
-        var url="https://cdn.statically.io/gh/julianvasquez/letters/28c1fbb7/v.png";
-        document.getElementsByTagName("img")[0].setAttribute("src",url)
+        
+        document.getElementsByTagName("img")[0].setAttribute("src",ulr7)
 
     }
     function imprimirimagenW(){
-        var url="https://cdn.statically.io/gh/julianvasquez/letters/28c1fbb7/w.png";
-        document.getElementsByTagName("img")[0].setAttribute("src",url)
+        
+        document.getElementsByTagName("img")[0].setAttribute("src",ulr8)
 
     }
 
